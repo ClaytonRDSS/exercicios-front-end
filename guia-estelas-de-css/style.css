@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    box-sizing: border-box; /*Para que se mantenha o tamanho original da caixa.*/
+}
+
+h1:hover {
+    color: green;
+}
+
+header {
+    height: 100px;
+    border: 2px dashed rgb(240, 20, 20);
+    background-color: rgb(55, 100, 50);
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png);
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: contain; /* Cover: Cobre todo o background da pagina*/
+}
+
+ul li:first-child{ /* aplica so ao primeiro relemento*/
+    font-weight: bold;
+}
+/*
+h1 {
+    color: blue;
+    font-size: 60px;
+    background: gray;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin: 10%;
+    padding: 14px 20px;
+}
+*/
+
+/* DISPLAY: BLOCK VS INLINE */
+
+/*
+    Block: Ocupa toda linha, colocando o próximo elemento abaixo desse,
+    ///
+    Widt e heigth são respeitrados,
+    ///
+    padding, margin, border irão funcionar normalmente.
+*/
+
+/*
+    Inline: Elemento ao lado do outro,
+    width e heigth não funcionam,
+    Somente valores horizontais de margin, padding e border
+*/
+
+/*
+Exemplos:
+Block: <p> , <div>, <section>, todos os headings ,h1>, <h2>...,
+Inline: <a> <strong> <span> <em>
+
+body > ul > li {
+    color: #000000 / pegar os filhos direto do body.
+
+h1 + p { 
+    color: red; / pega o irmão direto do h1 o primeiro <p>
+    ex: <h1> titulo </h1>
+        <p> Esse é um paragrafo</p>
+        <p>Mais um Paragrafo</p>
+}
+
+h1 ~ p {
+    color: red; / depois do h1, todos as tags p receberam o stylo
+}
+
+
+article p:nth-of-type(1) { // -Seleciona o elemento que vai sofrer a modificação
+    font-weight: bold;
+    font-size: 18px;
+}
+
+article p:nth-child(1) { // - far uma contagem de todo os filhos contando com o <h3>
+    font-weight: bold;
+    font-size: 18px;
+}
+
+article p:nth-child(even/ add) { // - Even: - seleciona os filhos de numero Par e o ADD: - seleciona os números impar.
+    font-weight: bold;
+    font-size: 18px;
+}
+*/

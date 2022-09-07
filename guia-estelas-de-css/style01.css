@@ -1,0 +1,29 @@
+a:hover {
+    color: red;
+}
+
+a:focus {
+    border-color: brown;
+}
+
+li {
+    position: relative;
+}
+
+li::after {
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+}
+
+/*
+    ::before
+    ::after
+    ::first-line
+
+    a::before {
+        content: " Tem que ter o content ";
+*/

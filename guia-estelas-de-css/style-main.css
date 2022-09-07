@@ -1,0 +1,14 @@
+main{
+
+    color: white;
+    background-color: rgb(55, 100, 50);
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png);
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: contain; /* Cover: Cobre todo o background da pagina*/
+    background-origin: content-box;
+    background-clip: content-box;
+    background-attachment: fixed;/*A imagem do background fica fiixada em quando a página é escrolada.*/
+
+    background: linear-gradient(red, green, black);
+}

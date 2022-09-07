@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    gap: .8rem; /* Colocar lado a lado e separar*/
+}
+
+aside, main {
+    border: 1px solid;
+    height: 80vh;
+}
+aside{
+    background-color: green;
+    flex-basis: 25%; /* tamanha em porcentagem a relação ao main*/
+}
+
+main {
+    background-color: aqua;
+    flex: 1;
+}

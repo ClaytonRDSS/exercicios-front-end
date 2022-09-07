@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+        <!--
+            <input type="text">
+                atributos comuns
+
+                    - autocomplete ex: e-amil: o navegador ira completar de acordo com a digitação se aquela informação já foi colocada antes.    
+                    - autofocus:  o cursor vai ficar piscando no input.
+                    - disable: desabilitado.
+                    - readonly: desabilitado. (quase todos os campos aceitam).
+                    - value: tipo de placeholder que o usuário consegue alterar
+                    - form: serve para lincar um forms atravez do seu id ex: <form id="meu-form"></form> (quase todos os campos aceitam).
+                    <input name="text" type="text" for="meu-form">
+                    - name: usado junto a chamada do form. 
+                    - required: Obrigatorios informar um valor no campo. (quase todos os campos aceitam).
+                    - placeholder: (password, search, tel, tex, url).
+        -->
+        <!--
+            Tipos de input
+                <input type="password"> : 
+                    atributos 
+                        - minlength e maxlength.
+                        - pattern: permite que a senha tenha caracteres especiais para uma melhor criptografia.
+                            *pattern="[0-9a-fA-F] {4,8}".
+                        -title: mesagem de aviso ao usuário
+
+        -->
+
+        <form action="">
+            <fieldset>
+                <legend>Inpute do tipo file</legend>
+            <input type="url"
+                placeholder="URL"
+                pattern=".*\.com\.br\/.*"
+                title="Informe uma url valida."
+            >
+            <button type="submit">Enviar</button>
+            <!-- se não colocar o atributo pattern no input do type URL, ele pode aceira urls sem o (.com.br)
+                - spellcheck: habilita a verificação ortografica do campo
+
+            -->
+        </fieldset>
+        </form>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Input file</legend>
+                <input type="file">
+            </fieldset>
+            <!--
+                - value: contém o aquivo a ser enviado
+                - accept: descreve os tipos de arquivos que serão aceitos
+                    Ex: .doc, .pdf, .docx, .png...
+                - para enviar aquivos devera utilizar o method="post" e o atributo= enctype="multipart/form-data"
+            -->
+
+            <fieldset>
+                <legend>input do tipo Color</legend>
+                <input type="color">
+            </fieldset>
+
+            <fieldset>
+                <legend>input do tipo Data</legend>
+                <input type="date" value="yyyy-mm-dd">
+                <!--
+                    Types variados: month: Mês e Ano, detatimes-local: data e hora, time: hora, week: semana
+                -->
+            </fieldset>
+
+            <fieldset>
+                <!--Controle para selecionar um valor numérico-->
+                <legend>input do tipo range</legend>
+                <input type="range" min="-10" max="150" step="5" value="80">
+            </fieldset>
+
+            <fieldset>
+                <legend>input do tipo number</legend>
+                <input type="number">
+                <!--atributos: min/ max e 
+                    step: para selecionar de quanto em quanto o numero vai passar
+                        Ex: <input type="number" step="100">
+                -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Input checkbox</legend>
+                <input type="checkbox" checked>
+            </fieldset>
+
+            <fieldset>
+                <legend>Input radio</legend>
+                <input type="radio" checked>  
+            </fieldset>
+
+            <fieldset>
+                <!--Marcar múltriplo valores-->
+                <legend>Choose your intereste</legend>
+                <div>
+                    <input type="checkbox" id="coding" name="interest"
+                    value="coding" checked>
+                    <label for="coding">Coding</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="music" name="interest"
+                    value="music">
+                    <label for="music">Music</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bora tomar Café</legend>
+                <div>
+                    <input type="radio" id="yep" name="coffee"
+                    value="yep">
+                    <label for="yep">Sim</label>
+                </div>
+                <div>
+                    <input type="radio" id="nono" name="coffee"
+                    value="nono">
+                    <label for="nono">Não</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Digite um Texto</legend>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+        </form>
+
+
+        <fieldset>
+            <legend>Uso do Select</legend>
+        <label for="carselect">Qual modelo do Carro</label>
+
+        <!--Controle que foence um menu de opções-->
+        <select name="carmodel" id="carselect">
+            <option value="">Selecione um modelo</option>
+            <option value="Wv">Gol</option>
+            <option value="Fiat">Siena</option>
+            <option value="audi">A3</option>
+        </select>
+    </fieldset>
+
+    <!--
+        optgroup: agrupamento de opções dentreo do select
+            Ex: 
+    -->
+
+    <fieldset>
+        <legend>Uso de Optgroup</legend>
+        <select name="pets" size="3">
+            <optgroup label="Dogs pets">
+                <option value="dog">Rusc</option>
+                <option value="dog">Pastor</option>
+                <option value="dog">Viralata</option>
+                </optgroup>
+            <optgroup label="Cats pets">
+                <option value="Cat">Pelado</option>
+                <option value="Cat">Angora</option>
+                <option value="Cat">Siames</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+    <form action="">
+        <fieldset>
+            <legend>Input do tipo search</legend>
+                <datalist id="searcheterms">
+                    <option>Mac</option>
+                    <option>Win</option>
+                    <option>Linux</option>
+                </datalist>
+            <input type="search" name="q" list="searcheterms">
+            <button>Search</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

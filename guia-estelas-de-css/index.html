@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estudando CSS</title>
+</head>
+<body>
+    <h1 style=" color: red"> <!-- Css inline: A stylização é feita dentro do proprio elemento-->
+        <strong>Título da Página</strong>
+    </h1>
+
+    <!--
+        - @import : incluir um CSS externo
+            Ex: @import url("https://local.com/style.css"). 
+
+        - @media : regras condicionais para dispositivos
+            Ex: @media (min-width: 500px) - (Responsividade).
+
+        - @font-face : fontes externas
+            Ex: @font-face {
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https: //fonts.googleapis.com/css2? family= Roboto:ital,wght@1,100 & display=swap" rel="stylesheet">
+            }
+
+        - @keyframes : Animation
+            Ex: @keyframes {
+
+            }
+    -->
+
+    <!--
+        #Distâncias relativas
+        São relativas a algum outro valor, pode ser elemento pai, ou root, ou o tamanho da tela.
+
+        * Benefício: Maior adaptação aos diferentes tipos de tela
+
+            Unidade    -    Relativo a
+             em               Tamanho da font pai.
+             rem              Tamanho da font do elemento raiz(root/HTML).
+             vw               1% da viewport width.
+             vh               1% da viewport heigth.
+    -->
+
+     <!--
+        Trabalhando co SVG
+    -->
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stoker-width="4" fill="yellow" />
+    </svg>
+
+
+    <ul>
+        <li>Gratidão</li>
+        <li>Esperança</li>
+        <li>Amor</li>
+    </ul>
+
+    <article>
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <p></p>
+    </article>
+    
+</body>
+</html>

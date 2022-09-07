@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.boxs {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+/*
+.box1 {
+    background-color: red;
+    position: relative; // O posicionamento dos elementos na tela é sempre relativo aos outros elementos.
+    position:absolute; // O elemento é sobreposto ao outros elementos da mesma caixa.
+    position: fixed; Os elementos que estiverem fora do fixed, se movimentarão normalmento ao escrow da tela.
+    left: 100px;
+    top: 80px;
+
+
+}
+*/
+.box1 {
+    background-color: red;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 4;
+}
+.box2 {
+    background-color: green;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+.box3 {
+    background-color: blue;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    /*justify-content: space-between; pega os elementos do container e coloca um espaçamento entre os elementos*/
+    justify-content: center;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}

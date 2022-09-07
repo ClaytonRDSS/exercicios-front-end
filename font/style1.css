@@ -1,0 +1,28 @@
+p { /* fontes do sistema*/
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.6px; /* Espaço entre linhas*/
+
+    text-transform: capitalize ;/*Capitalize = As primeiras letras de cada palavras maiusculas. * lowercase uppercase = todas a letras maiusculas ou minusculas*/
+
+    text-decoration:line-through underline overline ;
+
+    text-align:right ;
+
+    text-shadow: 1px 1px 8px red,
+                2px 2px 1px green; 
+}
+
+p { /* fonstes da web*/
+    @font-face {
+        font-family: ;
+        src: url();
+    }
+
+    @import url();
+
+}
